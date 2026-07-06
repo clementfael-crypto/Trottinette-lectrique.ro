@@ -1,1 +1,151 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<title>Produit - Trottinette Express</title>
+
+<link rel="stylesheet" href="css/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+.product-container{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:40px;
+padding:120px 8% 60px;
+align-items:start;
+}
+
+.product-image img{
+width:100%;
+border-radius:15px;
+box-shadow:0 15px 40px rgba(0,0,0,0.15);
+}
+
+.product-title{
+font-size:32px;
+margin-bottom:10px;
+}
+
+.product-price{
+font-size:28px;
+color:#6a00ff;
+font-weight:700;
+margin:15px 0;
+}
+
+.specs{
+background:#fff;
+padding:20px;
+border-radius:12px;
+box-shadow:0 10px 25px rgba(0,0,0,0.08);
+margin-top:20px;
+}
+
+.specs ul{
+padding-left:18px;
+}
+
+.buy-box{
+margin-top:20px;
+display:flex;
+gap:10px;
+align-items:center;
+flex-wrap:wrap;
+}
+
+input[type="number"]{
+width:70px;
+padding:10px;
+border-radius:8px;
+border:1px solid #ccc;
+}
+
+.description{
+margin-top:15px;
+color:#555;
+}
+
+@media(max-width:768px){
+.product-container{
+grid-template-columns:1fr;
+}
+}
+</style>
+
+</head>
+
+<body>
+
+<!-- NAV -->
+<header>
+<div class="logo">🛴 Trottinette Express</div>
+
+<nav>
+<a href="index.html">Accueil</a>
+<a href="boutique.html">Boutique</a>
+<a href="contact.html">Contact</a>
+<a href="panier.html">Panier</a>
+</nav>
+</header>
+
+<!-- PRODUCT -->
+<section class="product-container">
+
+<!-- IMAGE -->
+<div class="product-image">
+<img src="https://images.unsplash.com/photo-1593941707882-a5bac6861d75?auto=format&fit=crop&w=1000&q=80">
+</div>
+
+<!-- DETAILS -->
+<div>
+
+<h1 class="product-title">KuKirin G2 Pro</h1>
+
+<div class="product-price">280 €</div>
+
+<p class="description">
+La KuKirin G2 Pro est une trottinette électrique puissante et confortable,
+idéale pour les trajets urbains et les longues distances.
+Elle combine autonomie, sécurité et performance.
+</p>
+
+<div class="specs">
+
+<h3>⚙️ Caractéristiques techniques</h3>
+
+<ul>
+<li>Autonomie : jusqu'à 60 km</li>
+<li>Vitesse maximale : 45 km/h</li>
+<li>Moteur : 800W</li>
+<li>Batterie lithium haute capacité</li>
+<li>Freins à disque avant/arrière</li>
+<li>Suspension renforcée</li>
+</ul>
+
+</div>
+
+<!-- PURCHASE -->
+<div class="buy-box">
+
+<input type="number" value="1" min="1">
+
+<a href="#" class="buy">Ajouter au panier</a>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- FOOTER -->
+<footer>
+<h3>Trottinette Express</h3>
+<p>📱 WhatsApp : +33 750794740</p>
+<p>©️ 2026 Tous droits réservés</p>
+</footer>
+
+</body>
+</html>
