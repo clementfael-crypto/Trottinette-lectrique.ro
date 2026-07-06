@@ -1,1 +1,185 @@
+/* ====== BASE ====== */
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
 
+body{
+background:#f5f6fb;
+color:#222;
+line-height:1.6;
+}
+
+/* ====== NAVBAR ====== */
+header{
+position:fixed;
+top:0;
+width:100%;
+background:#6a00ff;
+color:white;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 8%;
+z-index:1000;
+box-shadow:0 10px 30px rgba(0,0,0,0.1);
+}
+
+.logo{
+font-size:24px;
+font-weight:700;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:20px;
+font-weight:500;
+transition:0.3s;
+}
+
+nav a:hover{
+color:#ffd700;
+}
+
+/* ====== HERO ====== */
+.hero{
+height:90vh;
+background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
+url("https://images.unsplash.com/photo-1558981806-ec527fa84c39?auto=format&fit=crop&w=1800&q=80");
+background-size:cover;
+background-position:center;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+color:white;
+padding:20px;
+}
+
+.hero h1{
+font-size:55px;
+margin-bottom:15px;
+}
+
+.hero p{
+font-size:18px;
+margin-bottom:30px;
+}
+
+.btn{
+background:#6a00ff;
+color:white;
+padding:14px 30px;
+border-radius:50px;
+text-decoration:none;
+font-weight:600;
+transition:0.3s;
+}
+
+.btn:hover{
+background:#4b00b3;
+}
+
+/* ====== TITRES ====== */
+.title{
+text-align:center;
+font-size:36px;
+margin:60px 0 40px;
+color:#6a00ff;
+}
+
+/* ====== PRODUITS ====== */
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:25px;
+padding:0 8%;
+}
+
+.card{
+background:white;
+border-radius:15px;
+overflow:hidden;
+box-shadow:0 10px 25px rgba(0,0,0,0.08);
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+}
+
+.card img{
+width:100%;
+height:220px;
+object-fit:cover;
+}
+
+.card-content{
+padding:20px;
+}
+
+.price{
+color:#6a00ff;
+font-size:22px;
+font-weight:bold;
+margin:10px 0;
+}
+
+.buy{
+display:inline-block;
+padding:10px 20px;
+background:#6a00ff;
+color:white;
+text-decoration:none;
+border-radius:30px;
+}
+
+/* ====== FEATURES ====== */
+.features{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+padding:60px 8%;
+}
+
+.box{
+background:white;
+padding:25px;
+border-radius:12px;
+text-align:center;
+box-shadow:0 8px 20px rgba(0,0,0,0.08);
+}
+
+.box h3{
+color:#6a00ff;
+margin-bottom:10px;
+}
+
+/* ====== FOOTER ====== */
+footer{
+background:#111;
+color:white;
+text-align:center;
+padding:40px 20px;
+margin-top:60px;
+}
+
+/* ====== RESPONSIVE ====== */
+@media(max-width:768px){
+
+.hero h1{
+font-size:35px;
+}
+
+header{
+flex-direction:column;
+}
+
+nav{
+margin-top:10px;
+}
+
+}
